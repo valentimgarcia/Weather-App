@@ -1,0 +1,6 @@
+
+<app-header (onSearch)="searchCity($event)"></app-header>
+
+<div class="row">
+    <app-weather-card *ngFor="let weatherCity of filteredCities" [cityName]="weatherCity?.local" [globalIdLocal]="weatherCity?.globalIdLocal"  (click)="cardDetails(weatherCity.globalIdLocal)"></app-weather-card>
+</div>

@@ -1,0 +1,63 @@
+<div class="card-container">
+  <div class="weather-data">
+    <div class="header">
+      <div class="location">
+        <h2>{{cityName}}</h2>
+      </div>
+
+      <div class="weather-photo">
+        <img [src]="'https://www.ipma.pt/opencms/bin/icons/svg/weather/w_ic_d_'+(weatherData[0]?.idTipoTempo | number: '2.0-0')+ 'anim.svg'">
+      </div>
+    </div>
+    <div class="currentTemperature">
+      <h1>{{weatherData[1]?.tMed || '-'}}ºC</h1>
+    </div>
+  </div>
+
+  <div class="info">
+    <div class="info-container">
+      <div class="info-block">
+        <div class="image-data">
+          <img src="./assets/hot.png">
+          <span>max</span>
+        </div>
+        <div class="temperature-data">
+          {{weatherData[0]?.tMax || '-'}}ºC
+        </div>
+      </div>
+
+      <div class="info-block">
+        <div class="image-data">
+          <img src="./assets/cold.png">
+          <span>min</span>
+        </div>
+        <div class="temperature-data">
+          {{weatherData[0]?.tMin || '-'}}ºC
+        </div>
+      </div>
+
+      <div class="info-block">
+        <div class="image-data">
+          <img src="./assets/humidity.png">
+          <span>humidity</span>
+        </div>
+        <div class="temperature-data">
+          {{weatherData[1]?.hR || '-'}}%
+        </div>
+      </div>
+
+      <div class="info-block">
+        <div class="image-data">
+          <img src="./assets/wind.png">
+          <span>wind</span>
+        </div>
+        <div class="temperature-data">
+          {{weatherData[1]?.utci || '-'}}km/h
+        </div>
+      </div>
+
+      <ng-content></ng-content>
+    </div>
+  </div>
+
+</div>

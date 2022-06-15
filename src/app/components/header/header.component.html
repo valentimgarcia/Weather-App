@@ -1,0 +1,16 @@
+<div class="header">
+  <header>
+    <div class="logo-info">
+      <img src="./assets/logo.png" alt="" class="logo">
+      <h1 class="logo-h1">SIS Weather</h1>
+
+    </div>
+    <div  class="search">
+      <form *ngIf="showSearchBox" #form="ngForm" (submit)="searchCity()">
+        <input type="text" placeholder="Search the city" name="city" [(ngModel)]="cityName">
+      </form>
+
+      <button pButton label="Home Page" class="p-button-success p-button-sm p-button-rounded p-button-outlined" (click)="homeButton()"></button>
+    </div>
+  </header>
+</div>

@@ -1,0 +1,48 @@
+<app-header [showSearchBox]="false"></app-header>
+
+<h2>More Details</h2>
+<h3>Last Update: {{weatherCard.weatherData[0]?.dataUpdate || '-'}}</h3>
+
+<app-weather-card #weatherCard class="row" [globalIdLocal]="globalIdLocal">
+
+  <div class="info-block">
+    <div class="image-data">
+      <img src="./assets/prob-rain.png">
+      <span>rain probability</span>
+    </div>
+    <div class="temperature-data">
+      {{weatherCard.weatherData[0]?.probabilidadePrecipita || '-'}}%
+    </div>
+  </div>
+
+  <div class="info-block">
+    <div class="image-data">
+      <img src="./assets/wind-direction.png">
+      <span>wind direction</span>
+    </div>
+    <div class="temperature-data">
+      {{weatherCard.weatherData[1]?.ddVento || '-'}}
+    </div>
+  </div>
+
+  <div class="info-block">
+    <div class="image-data">
+      <img src="./assets/uv.png">
+      <span>UV</span>
+    </div>
+    <div class="temperature-data">
+      {{weatherCard.weatherData[0]?.iUv || '-'}}
+    </div>
+  </div>
+
+  <div class="info-block">
+    <div class="image-data">
+      <img src="./assets/warming.png">
+      <span>water</span>
+    </div>
+    <div class="temperature-data">
+      {{weatherCard.weatherData[1]?.tempAguaMar || '-'}}ºC
+    </div>
+  </div>
+
+</app-weather-card>
