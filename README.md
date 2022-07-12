@@ -1,7 +1,9 @@
 # WeatherApp
 
 This is a Weather App done in Angular, TypeScript and consuming an API to fetch weather data from the 423 cities and towns from Portugal.
+
 Each location has a card and can be clicked to see more information.
+
 It is also possible to search for the location name.
 
 ![ezgif com-gif-maker](https://user-images.githubusercontent.com/96091032/178589759-a770c831-d577-457a-85c3-ae2f7db8204c.gif)
