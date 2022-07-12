@@ -1,5 +1,5 @@
 # WeatherApp
-![6mkp6g](https://user-images.githubusercontent.com/96091032/178588965-bc4ae70d-2bbe-4108-a02a-a6ad782eddb4.gif)
+![6mkp6g](https://user-images.githubusercontent.com/96091032/178589636-8cb507ca-0e1a-496a-80f8-10dac3a839bb.gif)
 
 
 This project was generated with [Angular CLI](https://github.com/angular/angular-cli) version 13.3.7.
