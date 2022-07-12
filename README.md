@@ -1,5 +1,6 @@
 # WeatherApp
-<iframe src="https://giphy.com/embed/xgh2mxUaVLyIM6UkmG" width="480" height="270" frameBorder="0" class="giphy-embed" allowFullScreen></iframe><p><a href="https://giphy.com/gifs/xgh2mxUaVLyIM6UkmG">via GIPHY</a></p>
+![6mkp6g](https://user-images.githubusercontent.com/96091032/178588965-bc4ae70d-2bbe-4108-a02a-a6ad782eddb4.gif)
+
 
 This project was generated with [Angular CLI](https://github.com/angular/angular-cli) version 13.3.7.
 
